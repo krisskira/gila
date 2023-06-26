@@ -273,7 +273,7 @@ UserModel.belongsToMany(ChannelModel, {
 
 export default async function databaseInit(): Promise<void> {
   await sequelize.authenticate()
-  await sequelize.sync({ force: true })
+  await sequelize.sync({ force: false })
   console.log("\n\n✅ Database connection established\n")
   await setupDatabaseSeed()
   process.once("SIGTERM", () => {
