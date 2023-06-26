@@ -1,0 +1,13 @@
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+.layout-container {
+  display: flex;
+  min-height: 100vh;
+  min-width: 100vw;
+}
+
+.flex-full-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
